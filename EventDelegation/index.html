@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        .event-container {
+            margin-bottom: 10px;
+        }
+
+        .event-container button {
+            height: 50px;
+            width: 120px;
+            font-size: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 30%;
+            gap: 12px;
+        }
+        .box {
+            display: inline-block;
+            height: 120px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .box.event {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="event-container">
+        <button>Add Box</button>
+    </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
